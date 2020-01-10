@@ -1,0 +1,90 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #add2fd;
+    font-size: 20px;
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+
+.background-container {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.mountains {
+    position: fixed;
+    background-image: url("img/mountains.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    height: 100vh;
+    width: 100vw;
+    bottom: 0;
+    top: 0;
+    filter: brightness(1.0);
+}
+
+.clouds {
+    position: fixed;
+    background-image: url("img/clouds.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+}
+
+.stars {
+    position: fixed;
+    background-image: url("img/night.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    opacity: 0;
+}
+
+.moon {
+    position: fixed;
+    background-image: url("img/moon.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 200px;
+    width: 100%;
+    top: 120vh;
+    left: -20vw;
+}
+
+.sun {
+    position: fixed;
+    background-image: url("img/sun.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 250px;
+    width: 100%;
+    top: 15vh;
+    left: 60vw;
+}
+
+.primary-font{
+    color: #000;
+}
+
+.grid {
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.temperature {
+    font-size: 10em;
+}
+
+.container {
+    opacity: 0;
+}
+
+.swal2-container {
+    width: 100vw;
+    height: 100vh;
+}

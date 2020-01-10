@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Federico Vitali Weather</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background images for day/night -->
+    <div class="background-container">
+        <div class="stars"></div>
+        <div class="clouds"></div>
+        <div class="moon"></div>
+        <div class="sun"></div>
+        <div class="mountains"></div>
+    </div>
+
+    <!-- Top navbar -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Simple Weather</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse align-items-center" id="navbarNav">
+            <ul class="navbar-nav ml-auto align-items-center">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Città" aria-label="Cerca" id="cerca">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" id="update">Cerca</button>
+                </form>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container with weather data -->
+    <div class="container primary-font my-4">
+        <div class="row my-4">
+            <div class="col-12 text-center">
+                <h2 id="city_name"></h2>
+                <p id="description"></p>
+            </div>
+
+            <div class="col-12 text-center">
+                <h1 id="temp" class="temperature"></h1>
+            </div>
+        </div>
+
+        <div class="row grid">
+            <div class="col-6 text-right">
+                <p>
+                    Minima <span id="temp_min" class="text-primary"></span>
+                </p>
+            </div>
+            <div class="col-6 text-left">
+                <p>
+                    Massima <span id="temp_max" class="text-danger"></span>
+                </p>
+            </div>
+        </div>
+
+        <div class="row grid">
+            <div class="col-6 text-right">
+                <p>
+                    Vento
+                </p>
+            </div>
+            <div class="col-6 text-left">
+                <p id="wind"></p>
+            </div>
+        </div>
+
+        <div class="row grid">
+            <div class="col-6 text-right">
+                <p>
+                    Umidità
+                </p>
+            </div>
+            <div class="col-6 text-left">
+                <p id="humidity"></p>
+            </div>
+        </div>
+
+        <div class="row grid">
+            <div class="col-6 text-right">
+                <p>
+                    Alba <span id="alba"></span>
+                </p>
+            </div>
+            <div class="col-6 text-left">
+                <p>
+                    Tramonto <span id="tramonto"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"
+        integrity="sha256-CkQcTxuQyZLqzqWqntH3FDxeDKMV0m7cw0aM5eph4Do=" crossorigin="anonymous"></script>
+    <script src="weather.bundle.js"></script>
+</body>
+
+</html>
