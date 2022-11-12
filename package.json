@@ -13,6 +13,6 @@
   "devDependencies": {
     "dotenv-webpack": "^1.7.0",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   }
 }
